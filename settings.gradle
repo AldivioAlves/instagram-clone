@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Instagram Clone"
+rootProject.name = "Instagram"
 include ':app'
