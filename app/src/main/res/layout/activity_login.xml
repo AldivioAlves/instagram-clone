@@ -50,6 +50,7 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/activity_login_button_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,12 +85,13 @@
 
     <ProgressBar
         android:id="@+id/activity_login_progress_bar"
-        android:visibility="gone"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_login_text_view_register" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_login_text_view_register"
+        tools:visibility="invisible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
