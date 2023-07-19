@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InstagramClone"
+        android:theme="@style/Theme.AppTheme"
         tools:targetApi="31">
         <activity
             android:name=".activities.SettingsActivity"
@@ -21,6 +21,7 @@
         </activity>
         <activity
             android:name=".activities.RegisterActivity"
+            android:theme="@style/Theme.InstagramLogin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -28,7 +29,9 @@
         </activity>
         <activity
             android:name=".activities.LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.InstagramLogin"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
