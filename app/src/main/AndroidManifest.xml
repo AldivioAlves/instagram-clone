@@ -13,8 +13,10 @@
         android:theme="@style/Theme.AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".activities.SettingsActivity"
-            android:exported="false">
+            android:name=".activities.UpdateAccountActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.MainActivity"
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -37,7 +39,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

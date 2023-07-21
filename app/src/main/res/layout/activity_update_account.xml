@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.UpdateAccountActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activity_update_account_image_profile"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/default_user_image"
+            app:civ_border_color="#FF000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar Foto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/darkBlue"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_update_account_edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Nome"
+                tools:ignore="TouchTargetSizeCheck"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableTint="@android:color/darker_gray"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_update_account_edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Email"
+                tools:ignore="TouchTargetSizeCheck"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawableTint="@android:color/darker_gray"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/activity_update_account_button_save"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SALVAR" />
+
+    </LinearLayout>
+</LinearLayout>

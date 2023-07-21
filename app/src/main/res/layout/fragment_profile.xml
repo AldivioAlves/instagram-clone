@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
 
         <TextView
-            android:id="@+id/fragment_profile_text_view_amount_following"
+            android:id="@+id/fragment_profile_text_view_total_following"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -39,7 +39,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_amount_following" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_total_following" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="@+id/profile_image">
 
         <TextView
-            android:id="@+id/fragment_profile_text_view_amount_publications"
+            android:id="@+id/fragment_profile_text_view_total_publications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -85,7 +85,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_amount_publications" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_total_publications" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 
         <TextView
-            android:id="@+id/fragment_profile_text_view_amount_followers"
+            android:id="@+id/fragment_profile_text_view_total_followers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -119,11 +119,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_amount_followers" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_text_view_total_followers" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/fragment_profile_button_edit_profile"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
