@@ -85,7 +85,6 @@ public class RegisterActivity extends AppCompatActivity {
         String name =editTextName.getText().toString();
         String email = editTextEmail.getText().toString();
         String password = editTextPassword.getText().toString();
-
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(task -> {
                     progressBar.setVisibility(View.INVISIBLE);
@@ -99,6 +98,8 @@ public class RegisterActivity extends AppCompatActivity {
                     user.setName(name);
                     user.save();
                     Toast.makeText(RegisterActivity.this, "Sucesso no Cadastro", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(this,MainActivity.class));
+                    finish();
                 } else {
                     Toast.makeText(RegisterActivity.this, "Ocorreu um erro no cadastro!", Toast.LENGTH_SHORT).show();
                 }
