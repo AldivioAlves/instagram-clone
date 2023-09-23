@@ -226,6 +226,17 @@ public class UpdateAccountActivity extends AppCompatActivity {
         Utils.validPermissions(requiredPermissions, this, SELECTION_GALLERY);
 
         UserUtils.FirebaseUserResultInterface firebaseUserResultInterface = user -> {
+            if(user ==null){
+                DialogInterface.OnClickListener positiveAction = (dialog, which) -> finish();
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Ops");
+                builder.setMessage("Não foi possível recuperar as informações do usuário!");
+                builder.setPositiveButton("Entendi", positiveAction);
+                builder.setCancelable(false);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+                return;
+            }
             this.user = user;
             editTextName.setText(user.getName());
             editTextEmail.setText(user.getEmail());
